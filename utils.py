@@ -35,15 +35,14 @@ def split_data(data_path, train_size=0.75, val_size=0.15, test_size=0.1):
     random.shuffle(names)
 
     for idx_name, name in enumerate(names):
-    # print(data_path)
-    if idx_name < int(train_size * len(names)): # filling up the train
-      os.replace(os.path.join(data_path, name), os.path.join(data_path, 'train', name))
+        if idx_name < int(train_size * len(names)): # filling up the train
+          os.replace(os.path.join(data_path, name), os.path.join(data_path, 'train', name))
 
-    elif idx_name < int((train_size + val_size) * len(names)): # filling up the validation
-      os.replace(os.path.join(data_path, name), os.path.join(data_path, 'val', name))
+        elif idx_name < int((train_size + val_size) * len(names)): # filling up the validation
+          os.replace(os.path.join(data_path, name), os.path.join(data_path, 'val', name))
 
-    else: # filling up the test
-      os.replace(os.path.join(data_path, name), os.path.join(data_path, 'test', name))
+        else: # filling up the test
+          os.replace(os.path.join(data_path, name), os.path.join(data_path, 'test', name))
 
 
 def parse_image(img_path):
