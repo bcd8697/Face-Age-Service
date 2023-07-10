@@ -9,7 +9,7 @@
 
 ## Description
 
-An example of the implementation of a face detector with age detection. The model for deployment is assembled into a dockerized service on FastAPI with Swagger, which accepts POST requests in the form of hyperlinks and returns JSON with the results of the model.
+An example of the implementation of a face detector with age detection. The model for deployment is assembled into a dockerized service on FastAPI with Swagger, which accepts POST requests in the form of hyperlinks and returns JSON with the results of the model. <a href="https://susanqq.github.io/UTKFace/" target="_blank"> UTKFace dataset </a> was used for training.
 
 ## Dependencies
 
